@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Formulario del alumno </title>
+    </head>
+    <body>
+        <form style="width: 500px" method="get"> <!--Aqui se pone el metodo-->
+            <fieldset>
+                <fieldset>
+                    <legend> DATOS PERSONALES </legend>
+                    <br>
+                    <label> Nombre </label>
+                    <input type="text" name="Enombre" placeholder="*Nombre" required> <!--Para obligar a que lo completen-->
+                    <br><br>
+                    <label> 1º Apellido </label>
+                    <input type="text" name="E1Apellido" placeholder="*Primer Apellido" required>
+                    <br><br>
+                    <label> 2º Apellido </label>
+                    <input type="text" name="E2Apellido" placeholder="*Segundo Apellido" requires>
+                    <br><br>
+                    <label> Fecha de nacimiento </label>
+                    <input type="date" name="Edate">
+                    <br><br>
+                    <label> Hora de nacimiento </label> <!--Para la hora-->
+                    <input type="time" name="Etime">
+                    <br><br>
+                    <label> Masculino </label>
+                    <input type="radio" name="Egenero" value="M"> 
+                    <label> Femenino </label>
+                    <input type="radio" name="Egenero" value="F">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> DATOS ECONÓMICOS </legend>
+                    <br>
+                    <label> IBAN </label>
+                    <input type="text" placeholder="Introduzca el número IBAN" maxlength="24" size="25">
+                    <br><br>
+                    <label> Banco </label>
+                    <input type="text" placeholder="Nombre de su banco" size="25">
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> DATOS ACADÉMICOS </legend>
+                    <br>
+                    <label> Centro </label>
+                    <input type="text" placeholder="Nombre del centro academico" name="Ecentro" size="40">
+                    <br><br>
+                    <label> Dirección </label>
+                    <input type="text" placeholder="Dirección del centro" name="Edireccion" size="40">
+                    <br><br>
+                    <label> Localidad </label>
+                    <input type="text" placeholder="Localidad del centro" name="Elocalidad" >
+                    <br><br>
+                    <label> Provincia </label>
+                    <input type="text" placeholder="Provincia del centro" name="Eprovincia">
+                    <br><br>
+                    <label> Grado a elegir </label>
+                    <select name="Eopcion"> <!-- Aquí podemos meter un size de 4, ya que son cuatro asignaturas, para que aparezcan todas directamente-->
+                        <option value="ASIR"> ASIR </option>
+                        <option value="DAM"> DAM </option>
+                        <option selected value="DAW"> DAW </option>
+                        <option value="SMR"> SMR </option>
+                    </select>
+                    <br><br>
+                    <label> Idiomas acreditados: </label> <br> <!--El checkbox permite que se haga una selección de varios a diferencia del radio-->
+                    <label name="Eidioma" value="IB1"> Inglés B1 </label>
+                    <input type="checkbox">
+                    <label name="Eidioma" value="IB2"> Ingles B2 </label>
+                    <input type="checkbox">
+                    <label name="Eidioma" value="FB1"> Francés B1 </label>
+                    <input type="checkbox">
+                    <label name="Eidioma" value="FB2"> Francés B2 </label>
+                    <input type="checkbox">
+                    <input type="color" name="Ecolor"> <!--Para seleccionar color-->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> DATOS ADICIONALES </legend>
+                    <br>
+                    <label> Ficheros adjuntos </label>
+                    <input type="file" name="Efile">
+                    <br><br>
+                    <textarea placeholder="Comentario" name="Eopinion" rows="3" cols="15"></textarea>
+                </fieldset>
+            </fieldset>
+            <br>
+            <input type="reset">
+            <input type="submit">
+        </form>
+        <br>
+        <!--Ir a maps > compartir > insertar un mapa > copiar HTML-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12675.611117325587!2d-5.968473914082831!3d37.41577276555054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12694fb6e18495%3A0x433c8357f1f80e31!2sTelepizza!5e0!3m2!1ses!2ses!4v1636100122007!5m2!1ses!2ses" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br><br><br><br>
+        <!-- Tenemos dos metodos, get y post
+        get. Tiene una limitacion de 2058 caracteres en el formulario
+        post. No tiene limitación y te proteje la informacion (contraseñas)
+        elementos en bloque <ol></ol> y elementos en linea ej. <br> (empty)-->
+    </body>
+</html>
