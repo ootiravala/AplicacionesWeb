@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Formulario del alumno </title>
+    </head>
+    <body>
+        <form style="width: 500px">
+            <fieldset>
+                <fieldset>
+                    <legend> DATOS PERSONALES </legend>
+                    <br>
+                    <label> Nombre </label>
+                    <input type="text" name="Enombre" placeholder="Nombre">
+                    <br><br>
+                    <label> 1º Apellido </label>
+                    <input type="text" name="E1Apellido" placeholder="Primer Apellido">
+                    <br><br>
+                    <label> 2º Apellido </label>
+                    <input type="text" name="E2Apellido" placeholder="Segundo Apellido">
+                    <br><br>
+                    <label> Fecha de nacimiento </label>
+                    <input type="date" name="Edate">
+                    <br><br>
+                    <label> Masculino </label>
+                    <input type="radio" name="Egenero" value="M"> 
+                    <label> Femenino </label>
+                    <input type="radio" name="Egenero" value="F">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> DATOS ECONÓMICOS </legend>
+                    <br>
+                    <label> IBAN </label>
+                    <input type="text" placeholder="Introduzca el número IBAN" maxlength="24" size="25">
+                    <br><br>
+                    <label> Banco </label>
+                    <input type="text" placeholder="Nombre de su banco" size="25">
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> DATOS ACADÉMICOS </legend>
+                    <br>
+                    <label> Centro </label>
+                    <input type="text" placeholder="Nombre del centro academico" name="Ecentro" size="40">
+                    <br><br>
+                    <label> Dirección </label>
+                    <input type="text" placeholder="Dirección del centro" name="Edireccion" size="40">
+                    <br><br>
+                    <label> Localidad </label>
+                    <input type="text" placeholder="Localidad del centro" name="Elocalidad" >
+                    <br><br>
+                    <label> Provincia </label>
+                    <input type="text" placeholder="Provincia del centro" name="Eprovincia">
+                    <br><br>
+                    <label> Grado a elegir </label>
+                    <select name="Eopcion">
+                        <option> ASIR </option>
+                        <option> DAM </option>
+                        <option selected> DAW </option>
+                        <option> SMR </option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> DATOS ADICIONALES </legend>
+                    <br>
+                    <label> Ficheros adjuntos </label>
+                    <input type="file" name="Efile">
+                    <br><br>
+                    <textarea placeholder="Comentario" name="Eopinion" rows="3" cols="15"></textarea>
+                </fieldset>
+            </fieldset>
+            <br>
+            <input type="reset">
+            <input type="submit">
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>Tablero de Ajedrez</title>
+</head>
+
+<body>
+  <style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    td {
+      border-color: black;
+      border-style: solid;
+      border-width: 1px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      overflow: hidden;
+      padding: 10px 5px;
+      word-break: normal;
+      height: 30px;
+      width: 50px;
+    }
+
+    #negro {
+      background-color: #000000;
+      border-color: black;
+      vertical-align: center
+    }
+
+    #blancopieza {
+      border-color: black;
+      color: #fe0000;
+      vertical-align: center
+    }
+
+    #negropieza {
+      background-color: #000000;
+      border-color: black;
+      color: #fe0000;
+      vertical-align: center
+    }
+
+    #blanco {
+      border-color: black;
+      vertical-align: center
+    }
+
+    /*Tanto en #blanco como en #negro he modificado porque al tener el border-color:inherit, se veía grisaceo el contorno.
+    He añadido una altura y anchura fija el el td para procurar que las celdas sean cuadradas.
+    He dejado el texto en td alineado en el centro.
+    Sé que el objetivo no era entrar en el css, pero me ha nacido la curiosidad por intentar hacerlo*/
+  </style>
+  <table>
+    <caption>Tablero Ajedrez. Patricia Riscart García</caption>
+    <tr>
+      <td id=negropieza>Torre</td>
+      <td id=blancopieza>Caballo</td>
+      <td id=negropieza>Alfil</td>
+      <td id=blancopieza>Reina</td>
+      <td id=negropieza>Rey</td>
+      <td id=blancopieza>Alfil</td>
+      <td id=negropieza>Caballo</td>
+      <td id=blancopieza>Torre</td>
+    </tr>
+    <tr>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+    </tr>
+    <tr>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+    </tr>
+    <tr>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+    </tr>
+    <tr>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+    </tr>
+    <tr>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+      <td id=blanco></td>
+      <td id=negro></td>
+    </tr>
+    <tr>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+      <td id=negropieza>Peón</td>
+      <td id=blancopieza>Peón</td>
+    </tr>
+    <tr>
+      <td id=blancopieza>Torre</td>
+      <td id=negropieza>Caballo</td>
+      <td id=blancopieza>Alfil</td>
+      <td id=negropieza>Reina</td>
+      <td id=blancopieza>Rey</td>
+      <td id=negropieza>Alfil</td>
+      <td id=blancopieza>Caballo</td>
+      <td id=negropieza>Torre</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
