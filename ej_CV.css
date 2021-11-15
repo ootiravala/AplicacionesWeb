@@ -1,0 +1,41 @@
+body{
+    font-family: 'Yuji Syuku', serif;
+    background-color: rgba(153, 182, 216, 0.507);
+}
+
+h1{
+    text-shadow: 3px 3px rgba(148, 142, 142, 0.836);
+    color: royalblue;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#sub{
+    font-weight: bold;
+    color: black;
+    font-size: small;
+    text-align: center;
+}
+
+h2{
+    color: rgba(166, 100, 212, 0.89);
+    text-align: left;
+    border: 3px solid rgba(224, 119, 58, 0.726);
+    background-color: rgba(179, 214, 97, 0.575);
+}
+
+h3{
+    border-bottom: 3px solid  rgb(40, 120, 196);
+}
+
+hr{
+    border-bottom: 5px dotted royalblue;
+   }
+
+a{
+    font-weight: bolder ;
+    color: rgb(72, 131, 58);
+    font-size: 25px;
+}
+
+
