@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="../index.html" target="_blank" method="post">
+        <fieldset>
+            <legend>Datos para reservar una clase</legend>
+            <label>Nombre</label>
+            <input type="text" name="Ename" placeholder="Escriba aquí" required>
+            <br><br>
+            <label>Apellidos</label>
+            <input type="text" name="Eapell" placeholder="Escriba aquí" required>
+            <br><br>
+            <label>Teléfono</label>
+            <input type="text" name="Etelf" placeholder="Escriba aquí" maxlength="9">
+            <br><br>
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="Edate">
+
+            <br><br><br>
+            <label> Actividades específicas </label><br>
+            <label> Proyección</label>
+            <input type="checkbox" name="Eact1">
+            <label> Técnica</label>
+            <input type="checkbox" name="Eact2">
+            <label> Puesta en escena</label>
+            <input type="checkbox" name="Eact3">
+            <label> General</label>
+            <input type="checkbox" name="Eact4">
+
+            <br><br><br>
+            <label> Día de la reserva </label><br>
+            <input type="date" name="Edia">
+            <input type="time" name="Ehora">
+
+            <br><br><br>
+            <label> ¿Necesitas vestuario? </label><br>
+            <label>SI</label>
+            <input type="radio" name="Eropa" value="SI">
+            <label>NO</label>
+            <input type="radio" name="Eropa" value="NO">
+        </fieldset>
+        <fieldset>
+            <legend> Datos adicionales</legend>
+            <label> Nombre de la obra </label>
+            <input type="text" name="Eobra" placeholder="Escriba aquí" required>
+            <br><br>
+            <label> Autor de la obra </label>
+            <input type="text" name="Eautor" placeholder="Escriba aquí" required>
+            <br><br>
+            <label> temática de la obra </label>
+            <input type="text" name="Etema" placeholder="Escriba aquí" required>
+
+            <br><br><br>
+            <label> Fragmento del guión</label><br>
+            <label> Elija un fichero: </label>
+            <input type="file" name="Efile">
+        </fieldset>
+        <fieldset>
+            <legend>Observaciones</legend>
+            <textarea name="Eobvs" placeholder="Utilice este cuadro para escribir" cols="57" rows="4"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar solicitud de reserva">
+        <input type="reset">
+    </form>
+    <br>
+    <a href="../index.html"> Volver a la Página Principal</a>
+</body>
+
+</html>
